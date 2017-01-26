@@ -10,11 +10,13 @@ services:
       MYSQL_DATABASE: p2y_wordpress
       MYSQL_ROOT_PASSWORD: ChangeMeIfYouWant
   my-wp:
-    build: .
+    image: wordpress
     ports:
-      - "8080:80"
+      - "80:80"
     links:
       - my-wpdb:mysql
+    volumes:
+      - './:/var/www/html'
     environment:
       WORDPRESS_DB_NAME: p2y_wordpress
       WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant
