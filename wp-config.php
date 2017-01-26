@@ -19,7 +19,7 @@
  */
 
 /* Multisite */
-define( 'WP_ALLOW_MULTISITE', true );
+define('WP_ALLOW_MULTISITE', false);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
