@@ -1,3 +1,4 @@
 docker-compose.yml
 .git
 .*/
+wp-content/uploads

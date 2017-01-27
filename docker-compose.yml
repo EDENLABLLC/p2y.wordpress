@@ -16,7 +16,7 @@ services:
     links:
       - my-wpdb:mysql
     volumes:
-      - './:/var/www/html'
+      - './wp-content/uploads:/var/www/html/wo-content/uploads'
     environment:
       WORDPRESS_DB_NAME: p2y_wordpress
       WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant
