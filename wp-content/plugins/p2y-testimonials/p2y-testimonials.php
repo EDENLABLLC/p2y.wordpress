@@ -21,7 +21,7 @@ function my_testimonial_cpt() {
     'singular_name'      => _x( 'Testimonial', 'post type singular name', 'p2y-testimonials' ),
     'menu_name'          => _x( 'Testimonials', 'admin menu', 'p2y-testimonials' ),
     'name_admin_bar'     => _x( 'Testimonial', 'add new on admin bar', 'p2y-testimonials' ),
-    'add_new'            => _x( 'Add New', 'book', 'p2y-testimonials' ),
+    'add_new'            => _x( 'Add New', 'testimonial', 'p2y-testimonials' ),
     'add_new_item'       => __( 'Add New Testimonial', 'p2y-testimonials' ),
     'new_item'           => __( 'New Testimonial', 'p2y-testimonials' ),
     'edit_item'          => __( 'Edit Testimonial', 'p2y-testimonials' ),
