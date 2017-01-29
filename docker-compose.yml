@@ -10,7 +10,7 @@ services:
       MYSQL_DATABASE: p2y_wordpress
       MYSQL_ROOT_PASSWORD: ChangeMeIfYouWant
   my-wp:
-    image: wordpress
+    build: .
     ports:
       - "80:80"
     links:
