@@ -26,13 +26,13 @@ define('WP_ALLOW_MULTISITE', false);
 define('DB_NAME', 'p2y_wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'wordpress');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ChangeMeIfYouWant');
+define('DB_PASSWORD', 'wordpress');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql');
+define('DB_HOST', 'my-wpdb');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

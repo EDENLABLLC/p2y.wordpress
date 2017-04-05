@@ -8,15 +8,18 @@ services:
       - .db:/var/lib/mysql
     environment:
       MYSQL_DATABASE: p2y_wordpress
-      MYSQL_ROOT_PASSWORD: ChangeMeIfYouWant
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
   my-wp:
     build: .
     ports:
-      - "80:80"
+      - "8080:80"
     links:
-      - my-wpdb:mysql
+      - my-wpdb
     volumes:
       - './:/var/www/html'
     environment:
       WORDPRESS_DB_NAME: p2y_wordpress
-      WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_HOST: my-wpdb
